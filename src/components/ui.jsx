@@ -69,7 +69,7 @@ export function Badge({ children, tone = "brand", className = "" }) {
 }
 
 export function Skeleton({ className = "" }) {
-  return <div className={cn("animate-pulse rounded-xl bg-slate-200/80", className)} aria-hidden="true" />;
+  return <div className={cn("animate-pulse rounded-lg bg-slate-200/80", className)} aria-hidden="true" />;
 }
 
 export function PropertyCardSkeleton() {
@@ -107,7 +107,7 @@ export function Toast({ tipo = "success", mensaje, onClose }) {
     <div
       role={exito ? "status" : "alert"}
       className={cn(
-        "flex items-start gap-3 rounded-xl border px-4 py-3 text-sm shadow-soft",
+        "flex items-start gap-3 rounded-lg border px-4 py-3 text-sm shadow-soft",
         exito ? "border-mint-100 bg-mint-50 text-mint-700" : "border-rose-100 bg-rose-50 text-rose-700"
       )}
     >

@@ -39,7 +39,7 @@ export function Navbar() {
   const cerrarMenu = () => setAbierto(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-slate-200/70 bg-paper/90 backdrop-blur-md">
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
         <Link to="/" className="flex items-center gap-2 font-bold text-brand-700" onClick={cerrarMenu}>
           <HeartHandshake className="h-6 w-6" aria-hidden="true" />
@@ -106,7 +106,7 @@ export function Navbar() {
       </div>
 
       {abierto && (
-        <nav className="border-t bg-white px-4 py-3 md:hidden" aria-label="Navegación móvil">
+        <nav className="border-t border-slate-200/70 bg-paper/95 px-4 py-3 md:hidden" aria-label="Navegación móvil">
           <div className="mx-auto flex max-w-6xl flex-col gap-1">
             {enlaces.map((enlace) => (
               <NavLink key={enlace.to} to={enlace.to} end={enlace.end} className={enlaceClass} onClick={cerrarMenu}>

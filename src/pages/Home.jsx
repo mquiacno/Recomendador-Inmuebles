@@ -75,7 +75,7 @@ export function Home() {
 
   return (
     <>
-      <section className="border-b border-slate-200 bg-gradient-to-br from-brand-50 via-white to-mint-50">
+      <section className="border-b border-slate-200/70 bg-gradient-to-br from-brand-50 via-paper to-mint-50">
         <div className="container mx-auto grid max-w-6xl gap-10 px-4 py-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-20">
           <div className="space-y-6">
             <Badge tone="mint">Beta · recomendaciones explicadas</Badge>
@@ -169,7 +169,7 @@ export function Home() {
         )}
       </section>
 
-      <section className="border-y border-slate-200 bg-white py-14">
+      <section className="border-y border-slate-200/70 bg-white/70 py-14">
         <div className="container mx-auto max-w-6xl px-4">
           <SectionTitle titulo="Cómo funciona" descripcion="Tres pasos, sin formularios interminables." />
           <div className="grid gap-4 md:grid-cols-3">

@@ -6,7 +6,7 @@ import { dinero } from "../lib/format";
 
 export function PropertyCard({ property, score, explicacion, compacta = false }) {
   return (
-    <Card className="flex h-full flex-col overflow-hidden transition-shadow hover:shadow-lg">
+    <Card className="flex h-full flex-col overflow-hidden transition-shadow duration-300 hover:shadow-lg">
       <Link to={`/propiedades/${property.id}`} className="relative block overflow-hidden" aria-label={`Ver detalle de ${property.titulo}`}>
         <img
           src={property.fotos?.[0]}
@@ -21,7 +21,7 @@ export function PropertyCard({ property, score, explicacion, compacta = false })
           {property.destacado && <Badge tone="amber">Destacado</Badge>}
         </div>
         {typeof score === "number" && (
-          <span className="absolute bottom-3 right-3 rounded-xl bg-white/95 px-2.5 py-1.5 text-xs font-bold text-brand-700 shadow">
+          <span className="absolute bottom-3 right-3 rounded-lg border border-slate-200/80 bg-white/95 px-2.5 py-1.5 text-xs font-semibold text-brand-700 shadow-soft">
             {score}% afinidad
           </span>
         )}
